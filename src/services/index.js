@@ -6,7 +6,6 @@ module.exports = function (app) {
         let transporter = nodemailer.createTransport({
             host: 'smtp-relay.sendinblue.com',
             port: 587,
-            secure: true,
             auth: {
                 user: 'saiko.mizuki@gmail.com',
                 pass: 'Qcm7DJEbjhHBUMRf'
@@ -14,6 +13,7 @@ module.exports = function (app) {
         })
 
         let mailOptions = {
+            from: 'ikki@kymzk.com',
             to: 'saiko.mizuki@gmail.com',
             subject: 'Kiriman dari Nodemailer',
             text: 'Mencoba coba!'
