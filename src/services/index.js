@@ -4,12 +4,12 @@ const nodemailer = require('nodemailer')
 module.exports = function (app) {
     app.use('/mail-test', (req, res) => {
         let transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465,
+            host: 'smtp-relay.sendinblue.com',
+            port: 587,
             secure: true,
             auth: {
-                user: 'muhammadizzuddinalfikri@gmail.com',
-                pass: 'KingOf7Seas'
+                user: 'saiko.mizuki@gmail.com',
+                pass: 'Qcm7DJEbjhHBUMRf'
             }
         })
 
